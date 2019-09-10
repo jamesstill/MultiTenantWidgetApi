@@ -60,7 +60,7 @@ namespace MultiTenantWidgetApi.Controllers
         {
             // build a DbContext for this tenant
             var service = new CatalogService(settings);
-            var cn = service.GetConnectionStringBuilder().Result;
+            var cn = service.GetConnectionString().Result;
 
             // -------------------------------------------------------------------
             // This would be production code with a real backend database
